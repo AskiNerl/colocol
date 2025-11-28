@@ -1,4 +1,57 @@
 
 body {
-    background-color: aqua;
+    background: linear-gradient(135deg, #6a11cd, #2575fc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    flex-direction: column;
+    text-align: center;
+    color: #f5f5f5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1, h2, p {
+    color: white;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+ul {
+    list-style: none; 
+    padding: 0;
+    margin: 20px 0;
+}
+
+ul li::before {
+    content: "• "; 
+    color: white (255, 255, 255);   
+    font-weight: bold;
+}
+
+
+ol {
+    list-style: none; 
+    counter-reset: myCounter; 
+    padding: 0;
+    margin: 20px 0;
+}
+
+ol li {
+    counter-increment: myCounter; 
+}
+
+ol li::before {
+    content: counter(myCounter) ". "; 
+    color: white;
+    font-weight: bold;
+}
+.Toni {
+    font-size:  20px;
+}
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    ul li::before, ol li::before {
+        font-size: 14px;
+    }
 }
