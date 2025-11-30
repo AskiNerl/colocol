@@ -1,6 +1,6 @@
 const button = document.querySelector("button")
 button.addEventListener("click", () => {
-    alert("Good job");
+    alert("Good boy");
 });
 const elems = document.querySelectorAll('.fade');
 
