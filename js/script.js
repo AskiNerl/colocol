@@ -1,7 +1,8 @@
-const button = document.querySelector("button")
-button.addEventListener("click", () => {
+const btn = document.querySelector(".btn")
+btn.addEventListener("click", () => {
     alert("Good boy");
 });
+
 const elems = document.querySelectorAll('.fade');
 
 function checkElements() {
@@ -20,3 +21,8 @@ checkElements();
 
 
 window.addEventListener('scroll', checkElements);
+
+const botn = document.querySelector(".botn")
+botn.addEventListener("click", () => {
+    alert("Ну вот молодца");
+});

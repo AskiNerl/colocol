@@ -139,3 +139,28 @@ img:hover {
     transform: translateY(0);
     box-shadow: none;
 }
+.botn {
+    padding: 12px 25px;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+
+    background: linear-gradient(135deg, #031d74, #d1c1e6);
+    color: white;
+
+    transition: 0.3s ease; 
+}
+
+
+.botn:hover {
+    transform: translateY(-3px);   
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); 
+}
+
+
+.botn:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
