@@ -1,28 +1,41 @@
 const btn = document.querySelector(".btn")
 btn.addEventListener("click", () => {
-    alert("Good boy");
+    alert("Good ");
 });
 
 const elems = document.querySelectorAll('.fade');
 
 function checkElements() {
-  elems.forEach(function (el) {
+  elems.forEach(el => {
     const rect = el.getBoundingClientRect();
-
-   
     if (rect.top < window.innerHeight - 50) {
       el.classList.add('show');
     }
   });
 }
 
+checkElements(); 
+window.addEventListener('scroll', checkElements);
+
+
 
 checkElements();
-
-
 window.addEventListener('scroll', checkElements);
 
 const botn = document.querySelector(".botn")
 botn.addEventListener("click", () => {
     alert("Ну вот молодца");
+});
+
+
+const modal = document.getElementById("modal");
+const open = document.getElementById("open-modal");
+const close = document.getElementById("close-modal");
+
+open.addEventListener("click", () => {
+    modal.style.display = "flex";
+});
+
+close.addEventListener("click", () => {
+    modal.style.display = "none";
 });
