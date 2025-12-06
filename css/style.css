@@ -207,3 +207,43 @@ img:hover {
   color: black;
   text-align: center;
 }
+
+#close-modal {
+    
+padding: 12px 25px;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+
+    background: linear-gradient(135deg, #ee0505, #ed00ae);
+    color: white;
+
+    transition: 0.3s ease; 
+}
+
+
+#close-modal:hover {
+    transform: translateY(-3px);   
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); 
+}
+#open-modal {
+    padding: 12px 25px;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+
+    background: linear-gradient(135deg, #0be128, #2f00ed);
+    color: white;
+
+    transition: 0.3s ease; 
+}
+
+
+#open-modal:hover {
+    transform: translateY(-3px);   
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); 
+}
