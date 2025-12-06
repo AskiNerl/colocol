@@ -27,15 +27,14 @@ botn.addEventListener("click", () => {
     alert("Ну вот молодца");
 });
 
-
 const modal = document.getElementById("modal");
-const open = document.getElementById("open-modal");
-const close = document.getElementById("close-modal");
+const openBtn = document.getElementById("openModal");
+const closeBtn = document.getElementById("closeModal");
 
-open.addEventListener("click", () => {
+openBtn.addEventListener("click", () => {
     modal.classList.add("show");
 });
 
-close.addEventListener("click", () => {
+closeBtn.addEventListener("click", () => {
     modal.classList.remove("show");
 });
