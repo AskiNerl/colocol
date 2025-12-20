@@ -1,6 +1,6 @@
 
 body {
-    background: linear-gradient(135deg, #6a11cd, #2575fc);
+    background: #05051a;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -254,4 +254,20 @@ img:hover {
 #closeModal :hover {
     transform: translateY(-3px);   
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); 
+}
+
+.snowflake {
+    position: fixed;
+    top: -10px;
+    background: white;
+    border-radius: 50%;
+    opacity: 0.8;
+    pointer-events: none;
+    z-index: 9999; 
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(110vh);
+    }
 }
